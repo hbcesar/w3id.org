@@ -1,5 +1,7 @@
 Options +FollowSymLinks
 
 RewriteEngine on
-RewriteRule ^/semkraph/source_files/?(.*) https://doi.org/10.5281/zenodo.20735733 [R=307,L]
+RewriteRule ^/semkraph/license/?(.*) https://github.com/COMBINI-Hub/semkraphkg-pipeline/blob/main/license.ttl [R=307,L]
+RewriteRule ^/semkraph/metadata/?(.*) https://github.com/COMBINI-Hub/semkraphkg-pipeline/blob/main/semkraph-metadata.ttl [R=307,L]
+RewriteRule ^/semkraph/?(.*) https://doi.org/10.5281/zenodo.20735733 [R=307,L]
 RewriteRule ^/?(.*) https://combini-hub.github.io/ [R=307,L]
